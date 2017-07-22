@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="description" content="Hello, WebVR! - A-Frame">
     <script src="scripts/aframe.min.js"></script>
+    <script src="scripts/gradientsky.min.js"></script>
 </head>
 <body>
 <!--<a-scene>
@@ -23,6 +24,7 @@
     <a-entity obj-model="obj: #tree-obj; mtl: #tree-mtl" scale="0.01 0.01 0.01">
         <a-animation easing="linear" attribute="rotation" dur="10000" to="1080 720 360" repeat="indefinite"></a-animation>
     </a-entity>
+    <a-gradient-sky material="shader: gradient; topColor: 100 100 150; bottomColor: 40 40 60;"></a-gradient-sky>
 </a-scene>
 
 
