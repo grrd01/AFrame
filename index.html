@@ -19,48 +19,40 @@
     <script src="scripts/gradientsky.min.js"></script>
 </head>
 <body>
-<!--<a-scene>
-    <a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9"></a-box>
-    <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E"></a-sphere>
-    <a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
-    <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane>
-    <a-sky color="#ECECEC"></a-sky>
-</a-scene>-->
 <a-scene>
     <a-camera position="0 -0.5 0" rotation="0 0 0"></a-camera>
     <a-assets>
-        <a-asset-item id="tree-obj" src="models/tinker.obj"></a-asset-item>
-        <a-asset-item id="tree-mtl" src="models/obj.mtl"></a-asset-item>
-        <a-asset-item id="tree-mtl2" src="models/obj2.mtl"></a-asset-item>
-        <a-asset-item id="tree-mtl3" src="models/obj3.mtl"></a-asset-item>
-        <a-asset-item id="tree-mtl4" src="models/obj4.mtl"></a-asset-item>
+        <a-asset-item id="tree-obj" src="models/dice.obj"></a-asset-item>
+        <a-asset-item id="tree-mtl1" src="models/dice1.mtl"></a-asset-item>
+        <a-asset-item id="tree-mtl2" src="models/dice2.mtl"></a-asset-item>
+        <a-asset-item id="tree-mtl3" src="models/dice3.mtl"></a-asset-item>
+        <a-asset-item id="tree-mtl4" src="models/dice4.mtl"></a-asset-item>
     </a-assets>
-    <a-entity obj-model="obj: #tree-obj; mtl: #tree-mtl" position="-2 1.2 -2" scale="0.01 0.01 0.01">
+    <a-entity obj-model="obj: #tree-obj; mtl: #tree-mtl1" position="-2 1.2 -2" scale="1 1 1">
         <a-animation easing="linear" attribute="rotation" dur="10000" to="1080 720 360" repeat="indefinite"></a-animation>
     </a-entity>
-    <a-entity obj-model="obj: #tree-obj; mtl: #tree-mtl2" position="-2 1.4 2" scale="0.01 0.01 0.01">
+    <a-entity obj-model="obj: #tree-obj; mtl: #tree-mtl2" position="-2 1.4 2" scale="1.1 1.1 1.1">
         <a-animation easing="linear" attribute="rotation" dur="7000" to="1080 720 360" repeat="indefinite"></a-animation>
     </a-entity>
-    <a-entity obj-model="obj: #tree-obj; mtl: #tree-mtl3" position="2 0.6 -2" scale="0.015 0.015 0.015">
+    <a-entity obj-model="obj: #tree-obj; mtl: #tree-mtl3" position="2 0.6 -2" scale="1.5 1.5 1.5">
         <a-animation easing="linear" attribute="rotation" dur="16000" to="360 720 360" repeat="indefinite"></a-animation>
     </a-entity>
-    <a-entity obj-model="obj: #tree-obj; mtl: #tree-mtl4" position="2 1.3 2" scale="0.013 0.013 0.013">
+    <a-entity obj-model="obj: #tree-obj; mtl: #tree-mtl4" position="2 1.3 2" scale="1.3 1.3 1.3">
         <a-animation easing="linear" attribute="rotation" dur="13000" to="1080 720 360" repeat="indefinite"></a-animation>
     </a-entity>
 
-    <a-entity obj-model="obj: #tree-obj; mtl: #tree-mtl" position="0 0.5 2.7" scale="0.02 0.02 0.02">
+    <a-entity obj-model="obj: #tree-obj; mtl: #tree-mtl1" position="0 0.5 2.7" scale="1.8 1.8 1.8">
         <a-animation easing="linear" attribute="rotation" dur="10000" to="720 360 1080" repeat="indefinite"></a-animation>
     </a-entity>
-    <a-entity obj-model="obj: #tree-obj; mtl: #tree-mtl2" position="2.7 1.2 0" scale="0.02 0.02 0.02">
+    <a-entity obj-model="obj: #tree-obj; mtl: #tree-mtl2" position="2.7 1.2 0" scale="2 2 2">
         <a-animation easing="linear" attribute="rotation" dur="7000" to="1080 720 360" repeat="indefinite"></a-animation>
     </a-entity>
-    <a-entity obj-model="obj: #tree-obj; mtl: #tree-mtl3" position="-2.7 0.9 0" scale="0.015 0.015 0.015">
+    <a-entity obj-model="obj: #tree-obj; mtl: #tree-mtl3" position="-2.7 0.9 0" scale="1.6 1.6 1.6">
         <a-animation easing="linear" attribute="rotation" dur="16000" to="720 1080 360" repeat="indefinite"></a-animation>
     </a-entity>
-    <a-entity obj-model="obj: #tree-obj; mtl: #tree-mtl4" position="0 1.8 -2.7" scale="0.025 0.025 0.025">
+    <a-entity obj-model="obj: #tree-obj; mtl: #tree-mtl4" position="0 1.8 -2.7" scale="2.5 2.5 2.5">
         <a-animation easing="linear" attribute="rotation" dur="8000" to="360 360 360" repeat="indefinite"></a-animation>
     </a-entity>
-
     <a-gradient-sky material="shader: gradient; topColor: 100 100 150; bottomColor: 40 40 60;"></a-gradient-sky>
 </a-scene>
 
