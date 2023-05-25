@@ -18,7 +18,7 @@
   <script src="scripts/aframe.1.4.0.min.js"></script>
 </head>
 <body>
-<a-scene>
+<a-scene vr-mode-ui="enterVRButton: #myEnterVRButton;">
   <a-camera position="0 1.1 0" rotation="0 0 0"></a-camera>
   <a-assets>
     <a-asset-item id="tree-obj" src="models/dice.obj"></a-asset-item>
@@ -39,6 +39,9 @@
   <a-entity obj-model="obj: #tree-obj; mtl: #tree-mtl4" position="0 1.8 -2.7" scale="2.5 2.5 2.5" rotation="0 0 0" animation="property: rotation; to:360 360 360; loop: true; dur: 8000; easing: linear"></a-entity>
   <a-obj-model src="#crate-obj" mtl="#crate-mtl" position="-2 1.2 -2"></a-obj-model>
   <a-sky src="#sky"></a-sky>
+  <div class="a-enter-vr" aframe-injected="">
+    <button id="myEnterVRButton" class="a-enter-vr-button" title="Enter VR mode with a headset or fullscreen mode on a desktop." aframe-injected=""></button>
+  </div>
 </a-scene>
 
 </body>
